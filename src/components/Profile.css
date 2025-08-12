@@ -1,0 +1,124 @@
+.profile_container {
+    background-color: #e8fff0;
+    color: #1f4032;
+    max-width: 100%;
+    padding: 60px 24px;
+    font-family: 'Segoe UI', sans-serif;
+    padding-top: 140px;
+    min-height: 100vh;
+  }
+  
+  .profile_container h2 {
+    font-size: 36px;
+    margin-bottom: 36px;
+    color: #2ecc71;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 0 0 6px rgba(46, 204, 113, 0.2);
+  }
+  
+  .profile_field {
+    margin-bottom: 40px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f4fff8;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .profile_field:hover {
+    transform: translateY(-4px);
+  }
+  
+  .profile_label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #27ae60;
+  }
+  
+  .profile_input {
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .profile_input:focus {
+    border-color: #2ecc71;
+    outline: none;
+    box-shadow: 0 0 6px #2ecc71;
+  }
+  
+  .profile_button {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 12px 26px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .profile_button:hover {
+    transform: scale(1.03);
+    background: linear-gradient(135deg, #27ae60, #219653);
+  }
+  
+  .profile_logout {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    display: block;
+    margin: 40px auto 0;
+    padding: 14px 30px;
+  }
+  
+  .profile_logout:hover {
+    background: linear-gradient(135deg, #c0392b, #96281b);
+  }
+  
+  .profile_message {
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: #2ecc71;
+  }
+  
+  .pass_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+  }
+  
+  .pass_eye {
+    position: absolute;
+    right: 16px;
+    top: 14px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #aaa;
+    user-select: none;
+    transition: color 0.3s ease;
+  }
+  
+  .pass_eye:hover {
+    color: #2ecc71;
+  }
+  

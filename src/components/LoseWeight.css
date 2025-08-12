@@ -1,0 +1,294 @@
+
+.goal-button {
+  background-color: #fff;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  height: 60px;
+  font-size: 1.1rem;
+}
+
+.goal-button:hover {
+  background-color: #e5e7eb;
+}
+
+.goals-dropdown {
+  right: 0;
+  margin-top: 0.5rem;
+}
+
+
+/*////////////////////////////////       Main      //////////////////////////////////////////*/
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  border-radius: 20px;
+  padding: 30px 40px;
+  
+}
+
+.app-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #1e40af;
+}
+
+.meal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.meal-label {
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: -10px;
+}
+
+.meal-input,
+.meal-select {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  transition: border 0.3s ease;
+}
+.meal-select {
+  width: 100%;
+  box-shadow: 0px 0px 5px rgb(107, 149, 255);
+  border: 1px solid rgb(173, 173, 201);
+  padding: 15px;
+}
+.meal-select option {
+  padding: 10px;
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 0;
+}
+
+.meal-input:focus,
+.meal-select:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+.meal-radio {
+  margin-right: 6px;
+}
+
+.btn {
+  border: none;
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #1C1A1C;
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+  margin: 30px 0px;
+}
+
+.sparkle {
+  fill: #AAAAAA;
+  transition: all 800ms ease;
+}
+
+.text {
+  font-weight: 600;
+  color: #AAAAAA;
+  font-size: medium;
+}
+
+.btn:hover {
+  background: linear-gradient(0deg,#A47CF3,#683FEA);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+  inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+  0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+  0px 0px 180px 0px #9917FF;
+  transform: translateY(-2px);
+}
+
+.btn:hover .text {
+  color: white;
+}
+
+.btn:hover .sparkle {
+  fill: white;
+  transform: scale(1.2);
+} 
+
+.meal-loading {
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+  color: #475569;
+}
+
+.meal-table table {
+  width: 100%;
+  border-collapse: separate;
+  margin-top: 2rem;
+  box-shadow: 0 0 15px #90a4ae;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: "Work Sans", sans-serif;
+  border-spacing: 0;
+  margin-bottom: 15px;
+}
+
+.meal-table th {
+  background-color: #90a4ae;
+  color: white;
+  font-weight: bold;
+}
+
+.meal-table th, .meal-table td {
+  padding: 16px;
+  text-align: left;
+}
+
+.meal-table tbody tr {  
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.meal-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.meal-table caption {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #666;
+}
+
+.meal-table {
+  margin-bottom: 2rem;
+}
+
+
+.save-button {
+  margin-top: 20px;
+}
+.choose-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 20px;
+  background-color: rgb(255, 255, 255);
+  padding: 40px;
+  width: 70%;
+  border-radius: 25px;
+  box-shadow: 0px 0px 20px rgb(224, 224, 224);
+}
+.diet-item {
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  border-radius: 15px;
+  border: #00000000 1px solid;
+}
+.diet-item:hover {
+  background-color: rgb(241, 241, 241);
+}
+.erekshe {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.diet-item:has(input:checked) {
+  background-color: #eff6ff;
+  border: 1px rgb(0, 0, 255) solid;
+}
+
+
+
+/*////////////////////////////////       left form      //////////////////////////////////////////*/
+
+.center-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.big-form-cont {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+  padding-left: 30px;
+
+}
+.meal-input {
+  width: 80%;
+  box-shadow: 0px 0px 5px rgb(107, 149, 255);
+  border: 1px solid rgb(173, 173, 201);
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 0px 5%;
+    display: flex;
+    justify-content: center;
+  }
+  .hero-image img {
+    transform: scale(0.8);
+    box-shadow: 10px 0px 30px rgb(15, 90, 0);
+  }
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .LeftSide {
+    margin-left: -20px;
+    gap: 20px;
+  }
+  .big-form-cont {
+    width: 100%;
+    padding-left: 7%;
+    padding-right: 0px;
+    gap: 20px;
+    margin-top: 50px;
+  }
+  .hero-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+}
+
+@media screen and (max-width: 575px) {
+  .center-form {
+    flex-direction: column;
+  }
+  .meal-label {
+    text-align: start;
+  }
+  .bottom-label {
+    margin-top: 20px;
+  }
+  table {
+    font-size: 10px;
+    margin: 0;
+  }
+  .app-container {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kaisei+HarunoUmi&family=Lilita+One&family=Lobster&family=Oleo+Script:wght@400;700&family=Orelega+One&family=Oswald:wght@200..700&family=Pacifico&family=Permanent+Marker&family=Rubik+Dirt&family=Rubik+Scribble&family=Rubik+Spray+Paint&family=Shrikhand&family=Triodion&display=swap');
+.card {
+  max-width: 600px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.463);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", sans-serif;
+  text-align: left;
+  margin-left: 50px;
+  background: rgba(255, 255, 255, 0.438);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.4px);
+  -webkit-backdrop-filter: blur(12.4px);
+  margin-top: -100px;
+  height: 620px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card .title {
+  font-size: 28px !important;
+  color: #2d6455;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  text-align: left !important;
+  margin-bottom: 30px !important;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #144538;
+  margin-bottom: 30px;
+  text-align: left !important; 
+}
+
+.line {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 30px 0;
+}
+
+.quote1 {
+  font-size: 15px !important;
+  color: #555;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.author {
+  display: block;
+  font-weight: bold;
+  font-style: normal;
+  color: #222;
+  margin-top: 10px;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 24px;
+  background-color: #1f4037;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #163029;
+}
+.TopMain {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 120vh;
+  background: url("https://worldbranddesign.com/wp-content/uploads/2022/08/copow-meal-delivery-website-branding-packaging-design-1.jpg")
+    no-repeat center/cover;
+}
+.testimonial-section {
+  padding: 80px 20px;
+  position: relative;
+  text-align: center;
+  font-family: sans-serif;
+  color: #133824;
+}
+
+.testimonial-slider {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+}
+.testimonial-section img {
+  margin-bottom: 50px;
+}
+.testimonial-card {
+  display: none;
+  padding: 40px;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+
+.testimonial-card.active {
+  display: block;
+}
+
+.testimonial-slider .quote {
+  font-size: 34px;
+  font-style: italic;
+  margin-bottom: 30px;
+  color: #2e5e4e;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.testimonial-slider .description {
+  font-size: 16px;
+  margin-bottom: 25px;
+  margin: 0 auto;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+}
+
+.testimonial-slider .author {
+  font-weight: bold;
+  color: #2b4a3b;
+}
+
+.arrow {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  background-color: #2d6455;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.arrow.left {
+  left: 10%;
+}
+
+.arrow.right {
+  right: 10%;
+}
+
+.arrow:hover {
+  background-color: #063528;
+}
+.nutrition-container {
+  min-height: 100vh;
+  background-color: #f5f6ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.nutrition-grid {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  height: 520px;
+  justify-content: center;
+}
+
+.nutrition-left-box {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #607960;
+  border-radius: 10px;
+  box-shadow: 18px -18px 0 #dce8dc;
+  padding: 3rem;
+  overflow: hidden;
+  width: 700px;
+}
+
+.nutrition-left-bg {
+  position: absolute;
+  top: -8px;
+  left: 8px;
+  width: 100%;
+  height: 100%;
+  background-color: #dbe8d3;
+  border-radius: 12px;
+  z-index: -1;
+}
+
+.nutrition-title {
+  font-size: 2rem;
+  font-weight: 300;
+  color: rgb(150, 168, 131);
+  margin-bottom: 2.5rem;
+}
+
+.nutrition-text {
+  color: #4b5563;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.nutrition-highlight {
+  color: #1b3b2f;
+  font-weight: 600;
+}
+
+/* ⬇️ Жаңа әрі сәнделген бөлім */
+.nutrition-steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem !important;
+  width: 400px;
+  padding-top: 200px !important;
+  padding-bottom: 200px !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nutrition-steps:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(27, 59, 47, 0.25);
+}
+
+.nutrition-step-title {
+  color: #1b3b2f;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.nutrition-step-text {
+  font-size: 0.92rem;
+  color: #374151;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.nutrition-steps hr {
+  margin: 0.5rem 0 1rem;
+  border: none;
+  border-top: 1px solid #d1d5db;
+  width: 100%;
+}
+
+.nutrition-button {
+  margin-top: 1rem;
+  background-color: #1b3b2f;
+  color: white;
+  font-size: 0.9rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  width: max-content;
+  transition: background-color 0.3s ease;
+}
+
+.nutrition-button:hover {
+  background-color: #163025;
+}
+.clinical-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.clinical-section h2 {
+  font-size: 42px;
+  color: #306d4d;
+  margin-bottom: 100px;
+  border-top: 2px solid #d4e2d4;
+  padding-top: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clinical-section .cards {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.clinical-section .card2 {
+  background-color: #ecf2e798;
+  border: 1px solid #4e5f4e;
+  border-radius: 10px;
+  box-shadow: 18px -18px 0 #dce8dc;
+  padding: 30px 20px;
+  max-width: 330px;
+  flex: 1;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  font-family: "Orelega One", serif;
+}
+
+.card2:hover {
+  transform: translateY(-5px);
+  box-shadow: 22px -22px 0 #c8dec8;
+}
+
+.clinical-section .icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #406c54;
+  display: flex;
+  justify-content: center;
+}
+
+.clinical-section .card-title {
+  font-size: 22px;
+  font-weight: 900;
+  color: #445c4f;
+  margin-bottom: 15px;
+}
+.clinical-section .icon-img {
+  width: 80px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+.clinical-section .icon-img2 {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+.clinical-section .card-desc {
+  font-size: 16px;
+  color: #5a7564;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.clinical-section .card-link {
+  color: #2d6a4f;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.clinical-section .card-link:hover {
+  text-decoration: underline;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background-color: #3d6356;
+  padding: 0 20px;
+  gap: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+.background-circles {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><circle cx="90%" cy="10%" r="50" fill="rgba(255, 255, 255, 0.08)"/><circle cx="70%" cy="30%" r="40" fill="rgba(255, 255, 255, 0.08)"/><circle cx="80%" cy="50%" r="60" fill="rgba(255, 255, 255, 0.08)"/><circle cx="60%" cy="70%" r="30" fill="rgba(255, 255, 255, 0.08)"/><circle cx="90%" cy="90%" r="40" fill="rgba(255, 255, 255, 0.08)"/><circle cx="50%" cy="90%" r="50" fill="rgba(255, 255, 255, 0.08)"/></svg>')
+    no-repeat;
+  background-size: cover;
+  animation: floatCircles 15s linear infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes floatCircles {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(-15px) translateX(10px);
+  }
+}
+
+.title2 {
+  color: #f5f5f5;
+  font-size: 48px !important;
+  font-weight: 900;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  max-width: 700px;
+}
+
+.awards-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 700px;
+}
+
+.award-item {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  background-color: #eaf0eb;
+  border-radius: 12px;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  cursor: default;
+}
+
+.award-item:hover {
+  background-color: #d7e2d7;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(46, 125, 50, 0.3);
+}
+
+.award-icon img {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  width: 60px;
+  height: 60px;
+  transform: translateY(-50%);
+}
+
+.award-text {
+  color: #2e7d32;
+  font-size: 22px;
+  font-weight: 700;
+  padding-left: 110px;
+  line-height: 1.3;
+}
+
+.button {
+  background-color: #2e7d32;
+  color: #ffffff;
+  padding: 16px 48px;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 6px 15px rgba(46, 125, 50, 0.4);
+}
+
+.button:hover {
+  background-color: #1b4517;
+  transform: scale(1.08);
+  box-shadow: 0 8px 25px rgba(27, 69, 23, 0.7);
+}
+
+.button span {
+  margin-left: 12px;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.button:hover span {
+  transform: translateX(6px);
+}
+.container2 {
+  min-height: 100vh;
+  background-color: #fafaf7;
+  color: #2f3e2d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 24px;
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  gap: 24px;
+}
+
+.container2 .title {
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 12px;
+  color: #1f2b19;
+  text-shadow: 0 1px 2px rgba(47, 62, 45, 0.15);
+}
+
+.subtitle {
+  max-width: 520px;
+  text-align: center;
+  font-size: 18px;
+  color: #5f6e55;
+  margin-bottom: 48px;
+  line-height: 1.5;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 16px;
+}
+
+@media (min-width: 768px) {
+  .steps {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 56px;
+  }
+
+  .title {
+    font-size: 44px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .step-text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .arrow.right {
+    right: 20%;
+  }
+  .arrow.left {
+    left: 20%;
+  }
+  .arrow{
+    position:absolute;
+    top: 230px;
+  }
+  .nutrition-title{
+    font-size: 1.5rem;
+  }
+  .nutrition-grid, .nutrition-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .nutrition-left-box {
+    width: auto;
+    margin: 10px;
+  }
+  .nutrition-steps {
+    height: auto;
+    width: auto;
+  }
+  .cards {
+    gap: 100px;
+    
+  }
+  .description {
+    width: auto;
+  }
+  .container {
+    padding: 20px 0px;
+    height: auto;
+  }
+  .card {
+    margin: 10px;
+    margin-top: 120px;
+    height: auto;
+  }
+}
+
+.step {
+  background-color: white;
+  border-radius: 18px;
+  padding: 28px 20px 36px;
+  box-shadow: 0 8px 16px rgba(47, 62, 45, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.step:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(47, 62, 45, 0.18);
+}
+
+.step-image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 4px 4px rgba(79, 104, 72, 0.15));
+  transition: filter 0.3s ease;
+}
+
+.step:hover .step-image {
+  filter: drop-shadow(0 8px 12px rgba(79, 104, 72, 0.3));
+}
+
+.step-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: #2f3e2d;
+  max-width: 220px;
+  line-height: 1.4;
+}
+@media (max-width: 420px) {
+  .card2 {
+    scale: 0.9;
+    
+    height: auto;
+  }
+  .cards {
+    padding: 0;
+  }
+}

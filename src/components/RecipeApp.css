@@ -1,0 +1,570 @@
+.recipe-page .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #ffffff00;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+.recipe-page .recipe-card {
+  width: 300px;
+  background-color: #fefefe;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px black;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.516);
+}
+.recipe-page .card__hero {
+  background-color: #fef4e2;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 1.5rem;
+  font-size: 0.875rem;
+  box-shadow: inset 0px 0px 100px 30px #000000;
+}
+.recipe-page .card__hero .card__job-title {
+  margin: 2rem 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding-right: 2rem;
+}
+.recipe-page .card__hero-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  font-weight: 700;
+}
+@media (min-width: 340px) {
+  .recipe-page .card__footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+}
+.recipe-page .card__job-summary {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0.75rem;
+}
+.recipe-page .card__btn {
+  width: 100%;
+  font-weight: 700;
+  border: none;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  padding: 0.5rem 1.25rem;
+  border-radius: 1rem;
+  background-color: #141417;
+  color: #fff;
+  font-size: 1rem;
+
+}
+@media (min-width: 340px) {
+  .recipe-page .card__btn {
+    width: max-content;
+  }
+}
+.recipe-page .card__job .card__job-title {
+  font-weight: 600;
+  margin: 0.5rem 0;
+  color: black;
+  text-shadow: none;
+}
+
+
+.recipe-page .cardochka {
+  position: relative;
+  background-color: #30344c;
+  padding: 3em;
+  z-index: 5;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 50px;
+  max-width: 500px;
+  transition: 200ms ease-in-out;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 400px;
+  scale: 0.95;
+}
+
+.recipe-page .username {
+  color: #C6E1ED;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
+.recipe-page .body {
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe-page .body .text {
+  color: #c0c3d7;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.recipe-page .cardochka-footer {
+  position: relative;
+  width: 100%;
+  color: #9fa4aa;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  margin-top: 10px;
+}
+
+.recipe-page .cardochka-footer div {
+  margin-right: 1rem;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.recipe-page .cardochka-footer svg {
+  margin-right: 5px;
+  height: 100%;
+  stroke: #9fa4aa;
+}
+
+.recipe-page .viewer span {
+  height: 20px;
+  width: 20px;
+  background-color: rgb(28, 117, 219);
+  margin-right: -6px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 8px;
+  color: #fff;
+  padding: 2px;
+}
+
+.viewer span svg {
+  stroke: #fff;
+}
+#heart {
+  display: none;
+}
+
+.like-button {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  height: 48px;
+  width: 136px;
+  border-radius: 16px;
+  border: none;
+  background-color: #30344c;
+  overflow: hidden;
+  box-shadow:
+    inset -2px -2px 5px rgba(255, 255, 255, 0.2),
+    inset 2px 2px 5px rgba(0, 0, 0, 0.1),
+    4px 4px 10px rgba(0, 0, 0, 0.4),
+    -2px -2px 8px rgba(255, 255, 255, 0.1);
+}
+
+.recipe-page .like {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.like-icon {
+  fill: #ceedff;
+  height: 28px;
+  width: 28px;
+}
+
+.like-text {
+  color: #fcfcfc;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.like-count {
+  position: absolute;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ceedff;
+  font-size: 16px;
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.5s ease-out;
+}
+
+.like-count.two {
+  transform: translateY(40px);
+}
+
+.on:checked ~ .like .like-icon {
+  fill: #fc4e4e;
+  animation: enlarge 0.2s ease-out 1;
+  transition: all 0.2s ease-out;
+}
+
+.on:checked ~ .like-count.two {
+  transform: translateX(0);
+  color: #fcfcfc;
+}
+
+.on:checked ~ .like-count.one {
+  transform: translateY(-40px);
+}
+
+@keyframes enlarge {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+
+
+.rc-app {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.btn-cont {
+    width: 67%;
+}
+
+.rc-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.rc-submit-btn {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.rc-submit-btn {
+  background: #2196f3;
+}
+
+.rc-form {
+  margin-bottom: 40px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 40%;
+  background-color: #fff;
+  padding: 40px;
+  padding-right: 60px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 100px black;
+  z-index: 5;
+}
+
+.rc-input {
+  display: block;
+  width: 98%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.rc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.rc-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.rc-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.rc-content {
+  padding: 20px;
+}
+
+.rc-ingr-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.rc-ingr {
+  background: #eee;
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+/* From Uiverse.io by adamgiebl */ 
+.cssbuttons-io-button {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(
+    0deg,
+    rgba(20, 167, 62, 1) 0%,
+    rgba(102, 247, 113, 1) 100%
+  );
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  margin-bottom: 20px;
+}
+
+.cssbuttons-io-button svg {
+  margin-right: 6px;
+}
+
+.cssbuttons-io-button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+.cssbuttons-io-button:active {
+  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}
+.close-form-btn {
+    border-radius: 100px;
+    border: #00000020 2px solid;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: all 0.3s;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+.close-form-btn:hover {
+    background-color: rgb(255, 4, 4);
+    border: #00000000 2px solid;
+}
+.close-form-btn:hover svg {
+    fill: #fff;
+    scale: 0.9;
+}
+
+
+
+
+.food-section {
+  padding: 40px 0;
+}
+
+.food-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.food-card {
+  position: relative;
+  width: 280px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px black;
+}
+
+.food-image {
+  width: 100%;
+  height: 500px;
+  display: block;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.food-label {
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #dba845;
+  color: white;
+  font-weight: 700;
+  padding: 6px 16px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px black;
+  white-space: nowrap;
+  user-select: none;
+}
+.food-section-title {
+  width: 100%;
+    font-weight: 700;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px black;
+  text-transform: uppercase;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 20px;
+}
+.about-food-sec {
+  width: 80%;
+  display: flex;
+  background-color: #ebebeb;
+  margin: 20px 0px;
+}
+.about-food-image {
+  width: 70% !important;
+}
+.about-food-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+.about-food-sec .food-content h1 {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+.food-content {
+  max-width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.dau-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .rc-form {
+    width: 200px;
+  }
+  .about-food-sec {
+    flex-direction: column;
+  }
+  .about-food-image {
+    width: 100% !important;  
+  }
+  .food-section-title {
+    max-width: 400px;
+  }
+  .food-container {
+    padding: 0;
+    width: auto;
+    justify-content: center;
+    gap: 50px;
+  }
+  .recipe-page .card {
+    max-width: 400px;
+    font-size: 12px ;
+    height: auto;
+  }
+  .recipe-page .body .text h3 {
+    font-size: 17px;
+  }
+  .text ul li, .text ol li {
+    font-size: 12px;
+  }
+  .like-button {
+    width: 125px;
+    height: 40px;
+  }
+  .card__job-title {
+    font-size: 20px !important;
+    ;
+  }
+  .recipe-page .card{
+    width: 90%;
+    min-width: 300px;
+    padding: 2em;
+    margin-left: 0;
+  }
+  .rc-form {
+    padding: 15px;
+    width: 300px !important;
+  }
+  .food-content {
+    max-width: 100% !important;
+  }
+  .food-image img {
+    width: 100%;
+  }
+  .cardochka {
+    scale: 0.8 !important;
+    margin-left: -40px;
+  }
+}
+.text ul li, .text ol li {
+  font-size: 12px;
+  margin-left: 40px;
+  margin-bottom: 5px;
+}
+.text ul, .text ol  {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.erekshe-title {
+  font-size: 15px !important;
+  padding: 5px;
+}
