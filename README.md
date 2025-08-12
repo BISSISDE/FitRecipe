@@ -1,12 +1,68 @@
-# React + Vite
+# 🌿 FitRecipe — AI-Powered Meal Selection by Goal
+## 🌐 Live Demo
+You can try the project here: [[http://fitrecipe.netlify.app](http://fitrecipe.netlify.app)]
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 💡 Idea
+FitRecipe is an **AI-powered nutrition assistant** that helps users choose recipes and meals based on their specific goals.  
+Whether you want to lose weight, gain muscle, maintain your shape, follow a vegan/vegetarian diet, go gluten-free, or stick to keto — the AI will find the best options for you.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🤖 AI Features
+- **Goal-based recommendations:** AI analyzes your goal and generates a tailored recipe selection.
+- **Smart filtering:** Calorie count, meal type, preparation difficulty, and available ingredients are processed by AI to give you the most relevant results.
+- **Ingredient replacement suggestions:** AI provides alternative ingredient options (e.g., what to use instead of chicken).
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📋 Main Features
+
+### 🔎 1. Goal Selection (AI-Powered)
+On the homepage:  
+> “I want to...” → dropdown menu with options:
+- Lose weight
+- Gain muscle
+- Maintain shape
+- Vegan / Vegetarian
+- Gluten-free diet
+- Keto, etc.  
+The AI processes your choice and creates a personalized meal plan.
+
+---
+
+### 📊 2. Filters (AI-Powered)
+- Calorie count
+- Meal type: breakfast, lunch, dinner, snack
+- Cooking difficulty / time
+- Ingredients available in your fridge  
+The AI matches recipes to your filters and preferences.
+
+---
+
+### 🍲 3. Recipe Cards
+Each recipe card contains:
+- Image
+- Dish name
+- Short description
+- Nutrition facts (calories, proteins, fats, carbs)
+- **"More Details"** button
+
+---
+
+## 🛠 Technologies
+- **React** + **Vite**
+- **Tailwind CSS** + **Custom CSS**
+- **AI API** (e.g., OpenAI / Gemini API)
+
+---
+
+## 🚀 Getting Started
+```bash
+# Install dependencies
+npm install
+
+# Run in development mode
+npm run dev
+
+# Build for production
+npm run build
